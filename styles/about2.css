@@ -1,0 +1,78 @@
+@media screen and (max-width: 576px) {
+    .main-container {
+        width: 100%;
+        /* padding: 0 0rem; */
+        overflow: hidden;
+    }
+
+    .main-container img {
+        object-fit: contain;
+    }
+    
+}
+
+
+
+.main-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* about section  */
+
+.about-title {
+    font-weight: 350;;
+}
+
+/* Scott collapsable bio */
+
+.expandable_content_wrapper {
+    display: none;
+    transition: height 0.9s ease-in-out;
+}
+
+.expandable_content_wrapper.open {
+    display: block;
+}
+
+.expandable_title {
+    font-weight: 350;
+    font-style: italic;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.expandable_title_bar {
+    cursor: pointer;
+}
+
+.image-up-icon, .image-down-icon {
+    max-height: 20px;
+    max-width: 20px;
+}
+
+.image-down-icon {
+    transition: transform 0.3s ease;
+}
+
+.image-down-icon.rotate {
+    transform: rotate(180deg);
+}
+
+.collapse-btn-container {
+    border-bottom: 1px solid black;
+    font-style: italic;
+}
+
+.collapse-btn {
+    width: 100%;
+}
+
+#footer-about {
+    margin-left: 0;
+}
+

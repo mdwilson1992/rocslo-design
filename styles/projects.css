@@ -1,0 +1,39 @@
+.projects-container {
+    width: 40%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.background-img {
+    background-image: url('../images/rocslo-logo-3.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    opacity: .1;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+@media screen and (max-width: 576px) {
+    .projects-container {
+        width: 100%;
+        padding: 0 1rem;
+        overflow: hidden;
+    }
+
+    .projects-container h3 {
+        font-size: 1.2rem;
+    }
+
+    .background-img {
+        width: 60%;
+        height: 50%;
+    }
+    
+}
